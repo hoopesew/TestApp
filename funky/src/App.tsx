@@ -36,7 +36,7 @@ class Team extends React.Component<TeamProps> {
     const oneTeam = this.props;
 
     return (
-      <div>
+      <div className="team-card">
         <br></br>
         <br></br>
         <h2>{oneTeam.school}</h2>
@@ -51,7 +51,7 @@ class Team extends React.Component<TeamProps> {
 
 function DisplayTeam() {
   return (
-    <div>
+    <div className="list">
       {teams.map((singleTeam) => (
         <Team key={singleTeam.school} {...singleTeam} />
       ))}
